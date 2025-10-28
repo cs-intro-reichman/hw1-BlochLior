@@ -3,7 +3,7 @@ public class NumWords {
 	public static void main(String args[]) {
 	    String numString = args[0];
         int num = Integer.parseInt(numString);
-        int hundreds = num/100%10;
+        int hundreds = num/100;
         int tens = num/10%10;
         int ones = num%10;
         String outString = "" + hundreds + " hundreds, " + tens + " tens, and " + ones + " ones.";
