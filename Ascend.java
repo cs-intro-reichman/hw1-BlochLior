@@ -15,10 +15,11 @@ public class Ascend {
         min = Math.min(a, b);
         min = Math.min(min, c);
         /*
-         * To find the middle value without any if statement,
-         * a summing of the values is used to extract that value.
-         */
+        To find the middle value without any if statement,
+        a summing of the values is used to extract that value.
+        */
         mid = a + b + c - max - min;
+        
         String outString2 = "" + min + " " + mid + " " + max;
         System.out.println(outString1);
         System.out.println(outString2);

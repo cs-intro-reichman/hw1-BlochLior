@@ -5,11 +5,11 @@ public class FVCalc {
         int currentValue = Integer.parseInt(currentValueString);
         String rateString = args[1];
         /*
-        * As rate is given as an input between 0-100,
-        * converting it to a percentage is accomplished by
-        * first dividing the input by 100, and for the output
-        * later multiplying it again by 100 followed by the '%'
-        * sign.
+        As rate is given as an input between 0-100,
+        converting it to a percentage is accomplished by
+        first dividing the input by 100, and for the output
+        later multiplying it again by 100 followed by the '%'
+        sign.
         */
         double rate = Double.parseDouble(rateString)/100;
         String nString = args[2];

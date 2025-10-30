@@ -8,6 +8,7 @@ public class Bill3 {
         int moneyInt = Integer.parseInt(money);
         double moneyDouble = (double)moneyInt;
         double value = Math.ceil(moneyDouble/3);
+        
         // For convenience, output string was divided to two
         String namesString = "Dear " + name3 + ", " + name2 + ", and " + name1;
         String paymentString = ": pay " + value + " Shekels each.";
