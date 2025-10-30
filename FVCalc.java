@@ -4,6 +4,13 @@ public class FVCalc {
 		String currentValueString = args[0];
         int currentValue = Integer.parseInt(currentValueString);
         String rateString = args[1];
+        /*
+        * As rate is given as an input between 0-100,
+        * converting it to a percentage is accomplished by
+        * first dividing the input by 100, and for the output
+        * later multiplying it again by 100 followed by the '%'
+        * sign.
+        */
         double rate = Double.parseDouble(rateString)/100;
         String nString = args[2];
         int n = Integer.parseInt(nString);
@@ -11,12 +18,10 @@ public class FVCalc {
         double rateForProduct = Math.pow(rate+1, (double)n);
         double futureValue = currentValue * rateForProduct;
 
-        String outpuString = "After " + n + " years, $" + 
-            currentValueString + " saved at " + rate*100 + 
-            "% will yield $" + (int)futureValue;
-        
-        System.out.println(outpuString);
-
-
+        // For convenience, output had been divided into sections.
+        String yearsSection = "After " + n + " years, ";
+        String currentAndRate = "$" + currentValueString + " saved at " + rate*100 + "%";
+        String capitalGain = " will yield $" + (int)futureValue + "\n";        
+        System.out.print(yearsSection + currentAndRate + capitalGain);
 	}
 }
