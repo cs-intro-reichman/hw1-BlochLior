@@ -1,8 +1,7 @@
 // Computes the future value of a saving investment.
 public class FVCalc {
 	public static void main(String[] args){
-		String currentValueString = args[0];
-        int currentValue = Integer.parseInt(currentValueString);
+        int currentValue = Integer.parseInt(args[0]);
         String rateString = args[1];
         /*
         As rate is given as an input between 0-100,
@@ -20,7 +19,7 @@ public class FVCalc {
 
         // For convenience, output had been divided into sections.
         String yearsSection = "After " + n + " years, ";
-        String currentAndRate = "$" + currentValueString + " saved at " + rate*100 + "%";
+        String currentAndRate = "$" + currentValue + " saved at " + rate*100 + "%";
         String capitalGain = " will yield $" + (int)futureValue + "\n";        
         System.out.print(yearsSection + currentAndRate + capitalGain);
 	}

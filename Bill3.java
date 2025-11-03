@@ -4,8 +4,7 @@ public class Bill3 {
 	    String name1 = args[0];
         String name2 = args[1];
         String name3 = args[2];
-        String money = args[3];
-        int moneyInt = Integer.parseInt(money);
+        int moneyInt = Integer.parseInt(args[3]);
         double moneyDouble = (double)moneyInt;
         double value = Math.ceil(moneyDouble/3);
         
